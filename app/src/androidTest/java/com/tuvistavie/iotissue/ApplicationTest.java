@@ -1,4 +1,4 @@
-package com.tuvistavie.rockettissue;
+package com.tuvistavie.iotissue;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,8 +1,8 @@
-package com.tuvistavie.rockettissue.di;
+package com.tuvistavie.iotissue.di;
 
 import com.google.inject.AbstractModule;
-import com.tuvistavie.rockettissue.manager.ISoundDetector;
-import com.tuvistavie.rockettissue.manager.SoundDetector;
+import com.tuvistavie.iotissue.manager.ISoundDetector;
+import com.tuvistavie.iotissue.manager.SoundDetector;
 
 public class BaseModule extends AbstractModule {
     @Override

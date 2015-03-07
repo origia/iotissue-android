@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tuvistavie.rockettissue" >
+    package="com.tuvistavie.iotissue" >
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
 
     <application
-        android:name=".App"
+        android:name="com.tuvistavie.iotissue.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,7 +18,7 @@
             android:value="com.tuvistavie.rockettissue.di.BaseModule" />
 
         <activity
-            android:name=".view.activity.MainActivity_"
+            android:name="com.tuvistavie.iotissue.view.activity.MainActivity_"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.tuvistavie.rockettissue.manager;
+package com.tuvistavie.iotissue.manager;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;
@@ -43,7 +43,6 @@ public class SoundDetector extends Observable implements ISoundDetector {
 
     protected void detectSound() {
         double currentLevel = getAudioLevel();
-        Log.i(TAG, "current level: " + currentLevel);
         if (currentLevel > 50) {
             setChanged();
             notifyObservers(currentLevel);
